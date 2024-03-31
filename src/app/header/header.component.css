@@ -1,0 +1,84 @@
+
+header {
+  padding: 0 10px;
+  margin-bottom: 50%;
+}
+.header-logo {
+  width: 100px;
+}
+
+.header-logo:hover {
+  width: 105px;
+}
+
+
+.navbar-toggler, .navbar-toggler-icon {
+  color: #ffffff; /* Change to the color you desire */
+  background-color: var(--light-gray);
+  transition: 0.9, ease-in-out;
+}
+
+.offcanvas-header {
+  background-color: var(--light-gray);
+  color: white;
+  font-family: var(--starwars-font);
+  border-bottom: 2px solid lightgray;
+}
+
+.offcanvas-body {
+  background-color: black !important;
+  color: white !important;
+}
+
+.offcanvas-list {
+  list-style: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-left: -20px;
+}
+
+.offcanves-list-item {
+  font-size: 1.55rem;
+  padding: 8px;
+}
+
+.offcanves-links {
+  flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  margin-left: -20px;
+  gap: 30px;
+}
+
+.offcanves-links-item {
+  padding-top: 10px;
+}
+
+.icon {
+  width: 40px;
+}
+.navbar-toggler:hover, .navbar-toggler-icon:hover {
+  color: #ffffff; /* Change to the color you desire */
+  background-color: var(--light-gray);
+}
+.navbar{
+  background-color: transparent !important;
+}
+
+.navbar-collapse {
+  background-color: var(--light-background-color) !important;
+
+}
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: goldenrod;
+}
+
+
+
+@media screen and (min-width: 1023px) {
+
+
+}
