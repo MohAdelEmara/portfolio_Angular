@@ -11,7 +11,7 @@
 .footer-invitation-container {
 
   position: absolute;
-  margin: -9rem 5% 0% 5%;
+  margin: -10rem 5% 0% 5%;
   border: solid var(--yellow) 2px;
   border-radius: 8%;
   background-color: var(--gray);
@@ -31,11 +31,21 @@
 
 .footer-title {
   text-align: center;
-  padding-top: 140px;
+  padding-top: 450px;
 }
 
 .footer-invitation-title {
-  word-spacing: 3px
+  text-align: center;
+  padding: 10px 5px;
+  word-spacing: 3px;
+  flex-wrap: wrap;
+
+}
+
+.footer-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .footer-button {
@@ -78,4 +88,3 @@
 .icon:hover{
   width: 50px;
 }
-

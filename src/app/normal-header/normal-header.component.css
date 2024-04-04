@@ -1,0 +1,55 @@
+.header {
+  padding: 50px 0 70px 0;
+}
+
+.header-logo {
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.header-logo:hover {
+  width: 105px;
+}
+
+.navbar {
+  padding: 0% 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+
+}
+
+.nromal-navbar-nav {
+  font-family: var(--starwars-font);
+  font-size: 1.25rem;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.nav-item {
+  transition: 1.5 ease-in-out;
+
+}
+.nav-item:hover {
+  color: black;
+  text-shadow: 0 0 15px var(--yellow);
+}
+
+
+.header-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 40px;
+    flex-wrap: nowrap;
+  }
+
+.icon {
+    width: 40px;
+  }
+
+  .icon:hover{
+    width: 50px;
+  }
+

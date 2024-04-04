@@ -1,0 +1,18 @@
+.off-canvas-header {
+  display: none;
+}
+
+/* Show the off-canvas header when window width is less than 1024px */
+@media screen and (max-width: 991px) {
+  .off-canvas-header {
+    display: block;
+  }
+}
+
+/* Show the normal header when window width is 1024px or larger */
+@media screen and (min-width: 992px) {
+
+  .normal-header {
+    display: block;
+  }
+}

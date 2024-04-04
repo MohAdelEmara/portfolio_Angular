@@ -1,3 +1,8 @@
-<app-header></app-header>
+<ng-container *ngIf="windowWidth >= 992; else offCanvasHeader">
+  <app-normal-header class="normal-header" ></app-normal-header>
+</ng-container>
+<ng-template #offCanvasHeader>
+  <app-offcanves-header class="off-canvas-header" ></app-offcanves-header>
+</ng-template>
 <app-main></app-main>
 <app-footer></app-footer>
