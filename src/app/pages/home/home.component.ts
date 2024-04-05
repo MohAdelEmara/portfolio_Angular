@@ -1,8 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { HeaderComponent } from "../../offcanves-header/header.component";
-import { MainComponent } from "../../main/main.component";
-import { FooterComponent } from "../../footer/footer.component";
-import { NormalHeaderComponent } from "../../normal-header/normal-header.component";
+import { HeaderComponent } from "../../components/offcanves-header/header.component";
+import { MainComponent } from "../../components/main/main.component";
+import { FooterComponent } from "../../components/footer/footer.component";
+import { NormalHeaderComponent } from "../../components/normal-header/normal-header.component";
 
 import { CommonModule } from '@angular/common';
 @Component({
