@@ -5,6 +5,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
 import { NormalHeaderComponent } from "../../components/normal-header/normal-header.component";
 
 import { CommonModule } from '@angular/common';
+import { HeaderControlService } from '../../services/header-control.service';
 @Component({
     selector: 'app-home',
     standalone: true,
@@ -18,16 +19,15 @@ import { CommonModule } from '@angular/common';
         CommonModule
     ]
 })
-export class HomeComponent {
-  windowWidth: number;
+export class HomeComponent implements OnInit {
+  windowWidth!: number;
 
-  constructor() {
-    this.windowWidth = window.innerWidth;
-  }
+  constructor(private headerControlService: HeaderControlService) { }
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.windowWidth = event.target.innerWidth;
+  ngOnInit(): void {
+    this.windowWidth = this.headerControlService.getWindowWidth();
+    this.headerControlService.windowWidth$.subscribe(width => {
+      this.windowWidth = width;
+    });
   }
 }
-
